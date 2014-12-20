@@ -212,6 +212,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
+# Ubuntu Overlay Files
+PRODUCT_COPY_FILES += \
+    device/motorola/falcon/ubuntu/display.conf:system/ubuntu/etc/ubuntu-touch-session.d/android.conf
+
 # Wifi
 PRODUCT_PACKAGES += \
     hostapd.accept \
