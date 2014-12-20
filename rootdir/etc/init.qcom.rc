@@ -430,15 +430,15 @@ on boot
     chown root mot_tcmd /sys/bus/i2c/drivers/synaptics_dsx_i2c/5-0020/reset
 
     # Change ownership and permission for led
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/red/blink
-    chown system system /sys/class/leds/green/brightness
-    chown system system /sys/class/leds/blue/brightness
-    chown system system /sys/class/leds/white/brightness
-    chown system system /sys/class/leds/white/blink
-    chown system system /sys/class/leds/rgb/control
-    chown system system /sys/class/leds/led:flash_0/brightness
-    chown system system /sys/class/leds/charging/brightness
+    chown system input /sys/class/leds/red/brightness
+    chown system input /sys/class/leds/red/blink
+    chown system input /sys/class/leds/green/brightness
+    chown system input /sys/class/leds/blue/brightness
+    chown system input /sys/class/leds/white/brightness
+    chown system input /sys/class/leds/white/blink
+    chown system input /sys/class/leds/rgb/control
+    chown system input /sys/class/leds/led:flash_0/brightness
+    chown system input /sys/class/leds/charging/brightness
     chmod 0664 /sys/class/leds/red/brightness
     chmod 0664 /sys/class/leds/red/blink
     chmod 0664 /sys/class/leds/green/brightness
@@ -451,11 +451,11 @@ on boot
     chmod 0666 /sys/class/leds/lcd-backlight/brightness
 
     # Enable writing to led blink node from userspace
-    chown system system /sys/class/leds/red/blink
-    chown system system /sys/class/leds/green/blink
+    chown system input /sys/class/leds/red/blink
+    chown system input /sys/class/leds/green/blink
 
     # Enable writing to brightness node under torch-light from userspace
-    chown system system /sys/class/leds/torch-light/brightness
+    chown system input /sys/class/leds/torch-light/brightness
     chmod 0666 /sys/class/leds/torch-light/brightness
 
     # Permissions for Factory Test of Charging Paths
