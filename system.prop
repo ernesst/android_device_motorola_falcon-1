@@ -1,5 +1,8 @@
 # system.prop for falcon
 
+#QCOM Hardware
+ro.hardware=qcom
+
 # audio
 audio.offload.24bit.enable=false
 audio.offload.buffer.size.kb=32
