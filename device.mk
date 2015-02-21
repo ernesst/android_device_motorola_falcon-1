@@ -194,6 +194,7 @@ PRODUCT_PACKAGES += \
     gpecheck.sh \
     init.mmi.boot.sh \
     init.mmi.touch.sh \
+    init.mmi.radio.sh \
     init.qcom.rc \
     init.qcom.ssr.sh \
     init.qcom.usb.rc \

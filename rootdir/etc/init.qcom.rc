@@ -499,6 +499,12 @@ on boot
 
 # Services start here
 
+service mmi-radio-sh /system/bin/sh /init.mmi.radio.sh
+    class core
+    user radio
+    group radio
+    oneshot
+
 service adsprpcd /system/bin/adsprpcd
     class main
     user media
