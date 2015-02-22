@@ -119,6 +119,10 @@ on fs
 
     setprop ro.crypto.fuse_sdcard true
 
+    # Let's Mount Ubuntu Touch partition    
+    mkdir -p /data/ubuntu/proc
+    mount -t proc proc /data/ubuntu/proc
+
 on post-fs-data
     mkdir /data/tombstones 0771 system system
     mkdir /tombstones/modem 0771 system system
