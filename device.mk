@@ -218,6 +218,9 @@ PRODUCT_COPY_FILES += \
     device/motorola/falcon/ubuntu/display.conf:system/ubuntu/etc/ubuntu-touch-session.d/android.conf \
     device/motorola/falcon/ubuntu/70-falcon.rules:system/ubuntu/lib/udev/rules.d/70-android.rules
 
+#Ubuntu Ramdisk Files
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/motorola/falcon/ubuntu-root,ubuntu-root)
 # Wifi
 PRODUCT_PACKAGES += \
     hostapd.accept \

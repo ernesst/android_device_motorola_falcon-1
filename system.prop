@@ -1,7 +1,8 @@
 # system.prop for falcon
 
-#QCOM Hardware
+#Hardware
 ro.hardware=qcom
+ro.product.device=falcon
 
 # audio
 audio.offload.24bit.enable=false
