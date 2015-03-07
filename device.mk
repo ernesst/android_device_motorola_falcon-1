@@ -47,7 +47,7 @@ PRODUCT_COPY_FILES += \
 
 # System Properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
+    persist.sys.usb.config=adb
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
@@ -218,9 +218,6 @@ PRODUCT_COPY_FILES += \
     device/motorola/falcon/ubuntu/display.conf:system/ubuntu/etc/ubuntu-touch-session.d/android.conf \
     device/motorola/falcon/ubuntu/70-falcon.rules:system/ubuntu/lib/udev/rules.d/70-android.rules
 
-#Ubuntu Ramdisk Files
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/motorola/falcon/ubuntu-root,ubuntu-root)
 # Wifi
 PRODUCT_PACKAGES += \
     hostapd.accept \

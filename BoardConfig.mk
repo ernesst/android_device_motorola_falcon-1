@@ -187,6 +187,9 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
     BOARD_SEPOLICY_UNION += su.te
 endif
 
+#Ubuntu Ramdisk
+BOARD_UBUNTU_RAMDISK_ADDITIONS := device/motorola/falcon/ubuntu-root/
+
 # Vold
 BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
