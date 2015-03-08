@@ -177,6 +177,9 @@ BOARD_SEPOLICY_UNION += \
     su.te
 endif
 
+#Ubuntu Ramdisk
+BOARD_UBUNTU_RAMDISK_ADDITIONS := device/motorola/falcon/ubuntu-root/
+
 # Vendor init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm

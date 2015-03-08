@@ -111,6 +111,11 @@ PRODUCT_PACKAGES += \
     qrngd \
     qrngp
 
+# Ubuntu Overlay Files
+PRODUCT_COPY_FILES += \
+    device/motorola/falcon/ubuntu/display.conf:system/ubuntu/etc/ubuntu-touch-session.d/android.conf \
+    device/motorola/falcon/ubuntu/70-falcon.rules:system/ubuntu/lib/udev/rules.d/70-android.rules
+
 # Torch
 PRODUCT_PACKAGES += \
     Torch
