@@ -44,6 +44,10 @@ persist.gps.qc_nlp_in_use=0
 persist.loc.nlp_name=com.qualcomm.services.location
 ro.gps.agps_provider=1
 
+#Hardware
+ro.hardware=qcom
+ro.product.device=falcon
+
 # Media
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
